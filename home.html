@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHBASE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .bg{
+        height: 100vh;
+        width: auto;
+    background-image:url(bg1.jpg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 65%;
+    }
+    .navbar1 {
+  position: absolute;
+  top: 0px;
+  margin-left: 25%;
+  /* background-image: url(bghome.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 65%; /* Width Height */
+
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.navbar1 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-right: 20px; */
+  /* margin-top: 30px; */
+}
+.navbar1 ul li {
+  display: inline-block;
+  position: relative;
+}
+.navbar1 ul li a {
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  font-size: 30px;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  /* align-items: center; */
+  margin: 3px;
+}
+.navbar1 ul li a:hover {
+  color: #4c03e7;
+}
+.navbar1 ul li ul.dropdown li {
+  display: block;
+}
+.navbar1 ul li ul.dropdown {
+  width: auto;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.navbar1 ul li:hover ul.dropdown {
+  display: block;
+}
+  </style>
+  <body>
+    <div class="bg"></div>
+    <div class="top">
+
+      <div class="navbar1">
+        <ul>
+          <li><a href="index.html" class="sections" id="home">HOME</a></li>
+          <li><a href="" class="slash" id="slash1">/</a></li>
+          <li><a href="ai.html" class="sections" id="ai">AI</a></li>
+          <li><a href="" class="slash" id="slash2">/</a></li>
+          <li><a href="ml.html" class="sections" id="ml">ML</a></li>
+          <li><a href="" class="slash" id="slash3">/</a></li>
+          <li><a href="web3.html" class="sections" id="web3">WEB 3</a></li>
+          <li><a href="" class="slash" id="slash4">/</a></li>
+          <li><a href="blockchain.html" class="sections" id="blockchain">BLOCKCHAIN</a></li>
+          <li><a href="" class="slash" id="slash5">/</a></li>
+          <li>
+            <a href="" class="sections" id="more">MORE</a>
+            <ul class="dropdown">
+              <li><a href="crypto.html" class="sections">CRYPTOCURRENCY</a></li>
+              <li><a href="datascience.html" class="sections">DATA SCIENCE</a></li>
+              <li><a href="startups.html" class="sections">STARTUPS</a></li>
+              <li><a href="cybersecurity.html" class="sections">CYBER SECURITY</a></li>
+              <li><a href="finance.html" class="sections">FINANCE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="name">TECH BASE</div>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="div">
+        <div class="box1 border1">
+          <main id="blog-container1" class="obj-width"></main>
+        </div>
+        <div class="box2container">
+          <div class="box2 border1">
+            <main id="blog-container2" class="obj-width blog-card2"></main>
+          </div>
+          <div class="heading2">MOST POPULAR</div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="box3container">
+          <div class="heading3">ARTIFICIAL INTELLIGENCE</div>
+          <div class="box3 border1">
+            <main id="blog-container3" class="obj-width blog-card3"></main>
+          </div>
+        </div>
+      
+      <div class="box4 border1">
+        <main id="blog-container4" class="obj-width"></main>
+      </div>
+    </div>
+    <div class="div">
+      <div class="box5 border1">
+        <main id="blog-container5" class="obj-width"></main>
+      </div>
+      <div class="box6container">
+      
+      <div class="box6 border1">
+        <main id="blog-container6" class="obj-width blog-card6"></main>
+        
+        </div>
+        <div class="heading6">MACHINE LEARNING</div>
+       
+      </div>
+    </div>
+    <div class="div">
+      <div class="box7container">
+        <div class="heading7">WEB 3</div>
+      <div class="box7 border1">
+        <main id="blog-container7" class="obj-width blog-card7"></main>
+      </div>
+    </div>
+      <div class="box8 border1">
+        <main id="blog-container8" class="obj-width"></main>
+      </div>
+    </div>
+    <div class="div">
+      <div class="box9 border1">
+        <main id="blog-container9" class="obj-width"></main>
+      </div>
+      <div class="box10container">
+      <div class="box10 border1">
+        <main id="blog-container10" class="obj-width blog-card10"></main>
+      </div>
+      <div class="heading10">BLOCKCHAIN</div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js">
+    </script>
+    <script>        var tl= gsap.timeline()
+        tl.from(".navbar1",{
+           y:-30,
+            opacity:0,
+            duration:1,
+            stagger:2,
+            delay:1
+        })</script>
+  </body>
+</html>
